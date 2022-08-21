@@ -1,0 +1,86 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "half_adder")
+(DATE "Mon Aug 22 00:23:50 2022")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2019.2")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE a_027_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (725.9:801.6:801.6) (725.9:801.6:801.6))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE b_027_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (742.8:818.6:818.6) (742.8:818.6:818.6))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE c_027_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2203.2:2446.0:2446.0) (2203.2:2446.0:2446.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE c_027_OBUF_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (54.0:67.0:67.0) (54.0:67.0:67.0))
+      (IOPATH I0 O (45.0:56.0:56.0) (45.0:56.0:56.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE s_027_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2176.8:2419.3:2419.3) (2176.8:2419.3:2419.3))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE s_027_OBUF_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I0 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "half_adder")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT a_027_IBUF_inst/O c_027_OBUF_inst_i_1/I0 (682.2:837.2:837.2) (682.2:837.2:837.2))
+      (INTERCONNECT a_027_IBUF_inst/O s_027_OBUF_inst_i_1/I1 (682.2:837.2:837.2) (682.2:837.2:837.2))
+      (INTERCONNECT b_027_IBUF_inst/O s_027_OBUF_inst_i_1/I0 (666.8:832.8:832.8) (666.8:832.8:832.8))
+      (INTERCONNECT b_027_IBUF_inst/O c_027_OBUF_inst_i_1/I1 (666.8:832.8:832.8) (666.8:832.8:832.8))
+      (INTERCONNECT c_027_OBUF_inst_i_1/O c_027_OBUF_inst/I (1228.1:1378.1:1378.1) (1228.1:1378.1:1378.1))
+      (INTERCONNECT s_027_OBUF_inst_i_1/O s_027_OBUF_inst/I (1126.4:1252.4:1252.4) (1126.4:1252.4:1252.4))
+      )
+    )
+)
+)

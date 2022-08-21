@@ -1,0 +1,86 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "half_adder")
+(DATE "Mon Aug 22 00:20:39 2022")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2019.2")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE a_027_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE b_027_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE c_027_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2218.9:2461.8:2461.8) (2218.9:2461.8:2461.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE c_027_OBUF_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I0 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE s_027_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2218.9:2461.8:2461.8) (2218.9:2461.8:2461.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE s_027_OBUF_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (45.0:56.0:56.0) (45.0:56.0:56.0))
+      (IOPATH I0 O (52.0:65.0:65.0) (52.0:65.0:65.0))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "half_adder")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT a_027_IBUF_inst/O c_027_OBUF_inst_i_1/I0 (554.4:583.6:583.6) (554.4:583.6:583.6))
+      (INTERCONNECT a_027_IBUF_inst/O s_027_OBUF_inst_i_1/I1 (554.4:583.6:583.6) (554.4:583.6:583.6))
+      (INTERCONNECT b_027_IBUF_inst/O s_027_OBUF_inst_i_1/I0 (554.4:583.6:583.6) (554.4:583.6:583.6))
+      (INTERCONNECT b_027_IBUF_inst/O c_027_OBUF_inst_i_1/I1 (554.4:583.6:583.6) (554.4:583.6:583.6))
+      (INTERCONNECT c_027_OBUF_inst_i_1/O c_027_OBUF_inst/I (554.4:583.6:583.6) (554.4:583.6:583.6))
+      (INTERCONNECT s_027_OBUF_inst_i_1/O s_027_OBUF_inst/I (554.4:583.6:583.6) (554.4:583.6:583.6))
+      )
+    )
+)
+)

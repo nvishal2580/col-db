@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Aug 22 02:57:19 2022
+# Process ID: 136
+# Current directory: D:/Xilinx/workspace/project_3_C_U19EC027/project_3_C_U19EC027.runs/synth_1
+# Command line: vivado.exe -log MUX.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MUX.tcl
+# Log file: D:/Xilinx/workspace/project_3_C_U19EC027/project_3_C_U19EC027.runs/synth_1/MUX.vds
+# Journal file: D:/Xilinx/workspace/project_3_C_U19EC027/project_3_C_U19EC027.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MUX.tcl -notrace
